@@ -47,12 +47,11 @@ working directory ->- staging area ->- respository
   
  'git add *' to activate progress 使得修改生效，只是在本地生效，还未推送到GitHub云端
  
- 'git commit -m "Myfirst commit"' to add commit to progress   给添加的文件附评论
+ 'git commit -m "Myfirst commit"' to add commit to progress   给添加的文件附评论，每次修改，一定记得做批注！！！便于后期检查
  
  'git push -u origin master' to send progress to GitHub  将本地修改推送到云端
 
 7. Select master to see progress
- 
  选择对应的branch便可以看到修改的痕迹
 
 8. git remote remove origin
@@ -60,5 +59,19 @@ working directory ->- staging area ->- respository
 
 9. git log
  显示所有修改记录
+
+10. git status -s
+ 缩写显示变化
+
+11. git diff
+ 在进入stage之前，会显示变化差异。进入stage之后，将无法看出区别
+
+12. git diff --cached 
+ 只显示staged状态，不便于看出区别。不要用，容易出问题！！！
+
+13. git diff HEAD
+ 所有的内容都会显示出来，staged状态的内容和刚修改的内容都显示出来
+
+
  
  以上内容来自于网络资源的整合，如有侵权，请邮箱联系删除
