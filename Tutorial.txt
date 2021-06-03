@@ -23,9 +23,9 @@ working directory ->- staging area ->- respository
  
 3. Configure Name and Emali
 
- 'git config --global user.name "YanXiong-UCAS"' to setting master name 
+ 'git config --global user.name "YanXiong-UCAS"' to setting master name  用来显示提交修改的姓名显示
  
- 'git config --global user.email "xiongyan_scholar@yeah.net"' to setting master email
+ 'git config --global user.email "xiongyan_scholar@yeah.net"' to setting master email  提交修改人的邮箱
  
  'git config -l' to check setting  用于检查配置
  
@@ -58,6 +58,7 @@ working directory ->- staging area ->- respository
 8. git remote remove origin
  取消本地目录下相关的远程库
 
-
+9. git log
+ 显示所有修改记录
  
  以上内容来自于网络资源的整合，如有侵权，请邮箱联系删除
