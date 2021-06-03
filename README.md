@@ -1,2 +1,2 @@
 # Tutorial-GitHub
-This is simple tutorial for GitHub learning.
+This is a simple tutorial for GitHub learning.
