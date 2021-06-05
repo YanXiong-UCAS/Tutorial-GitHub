@@ -1,0 +1,78 @@
+Git & GitHub
+This is a simple tutorial for Git&GitHub.
+Write by Yan XIONG (UCAS & EPFL)
+2021.06.05
+
+安装Git，并登录账号
+注册并登录Github账号
+
+working directory ->- staging area ->- respository
+工作目录          ->-    暂存区    ->-   资源库
+本地正在操作的数据，未保存的容易删除的 ->- 即将上传到GitHub的数据，中间区 ->- GitHub数据库
+
+
+1. 本地设置预开发文件及文件夹，保存好路径
+
+2. open Git
+ 
+ 'git --version'  to check the version of Git 
+ 
+ 'cd Project_name_direction' 定位到本地项目的目录
+
+ 'git status' to check progress of project
+ (初次使用的时候会提示fatal: not a git repository (or any of the parent directories): .git，需要先建立本地项目和GitHub云端仓库)
+ 
+3. Configure Name and Emali
+
+ 'git config --global user.name "YanXiong-UCAS"' to setting master name  用来显示提交修改的姓名显示
+ 
+ 'git config --global user.email "xiongyan_scholar@yeah.net"' to setting master email  提交修改人的邮箱
+ 
+ 'git config -l' to check setting  用于检查配置
+ 
+ 'git status' to check progress of project  (初次使用的时候会提示fatal: not a git repository (or any of the parent directories): .git，需要先建立本地项目和GitHub云端仓库)
+
+4. Initial 初始化
+
+ 'git init' to initial  操作前必须先进行initial
+ 
+5. Managing remote repositories
+ 
+ 'git remote add origin [Link URL]' to associate working directory and respository 关联本地项目目录与GitHub云端服务器
+
+6. Developing local projects
+
+ 直接在对应的本地的项目文件目录下进行开发，增删文件，修改代码等等
+ 
+ 'git status' to check progress 查看本地仓库的动态，显示有哪些修改变化新增空文件夹不会显示，里面必须有文件才可以，文件内也要有文字内容
+  
+ 'git add *' to activate progress 使得修改生效，只是在本地生效，还未推送到GitHub云端
+ 
+ 'git commit -m "Myfirst commit"' to add commit to progress   给添加的文件附评论，每次修改，一定记得做批注！！！便于后期检查
+ 
+ 'git push -u origin master' to send progress to GitHub  将本地修改推送到云端
+
+7. Select master to see progress
+ 选择对应的branch便可以看到修改的痕迹
+
+8. git remote remove origin
+ 取消本地目录下相关的远程库
+
+9. git log
+ 显示所有修改记录
+
+10. git status -s
+ 缩写显示变化
+
+11. git diff
+ 在进入stage之前，会显示变化差异。进入stage之后，将无法看出区别
+
+12. git diff --cached 
+ 只显示staged状态，不便于看出区别。不要用，容易出问题！！！
+
+13. git diff HEAD
+ 所有的内容都会显示出来，staged状态的内容和刚修改的内容都显示出来。不要用，容易出问题！！！
+
+
+ 
+ 以上内容来自于网络资源的整合，如有侵权，请邮箱联系删除
